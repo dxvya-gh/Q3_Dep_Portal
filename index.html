@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Department</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f3f6fb;
+            color: #202b3c;
+        }
+        header {
+            background: #173b70;
+            color: white;
+            padding: 28px 8%;
+        }
+        header h1 { margin: 0 0 8px; }
+        nav { background: #102b52; padding: 13px 8%; }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 22px;
+        }
+        main { max-width: 1100px; margin: 28px auto; padding: 0 20px; }
+        .hero {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 5px solid #3677c8;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 18px;
+            margin: 20px 0;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #0000000c;
+        }
+        .card h3 { color: #173b70; margin-top: 0; }
+        .tag {
+            display: inline-block;
+            padding: 5px 10px;
+            background: #e1f5e8;
+            color: #176638;
+            border-radius: 15px;
+            font-size: 13px;
+        }
+        footer {
+            background: #102b52;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 35px;
+        }
+        a { color: #2465a8; }
+        nav a { color: white; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Computer Science Department</h1>
+        <p>Learning, Innovation and Research</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#faculty">Faculty</a>
+        <a href="#announcements">Announcements</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section class="hero" id="about">
+            <h2>Welcome to Our Department</h2>
+            <p>
+                Our department develops problem-solving, programming and
+                research skills through practical learning and innovation.
+            </p>
+            <span class="tag">Admissions Information Available</span>
+        </section>
+
+        <section id="courses">
+            <h2>Courses Offered</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>Data Structures and Algorithms</h3>
+                    <p>Core concepts in efficient problem-solving.</p>
+                    <p><strong>Duration:</strong> One semester</p>
+                </article>
+                <article class="card">
+                    <h3>Database Management Systems</h3>
+                    <p>Database design, SQL and data management.</p>
+                    <p><strong>Duration:</strong> One semester</p>
+                </article>
+                <article class="card">
+                    <h3>Operating Systems</h3>
+                    <p>Processes, memory management and scheduling.</p>
+                    <p><strong>Duration:</strong> One semester</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="faculty">
+            <h2>Faculty Directory</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>Dr. Ananya Rao</h3>
+                    <p>Specialization: Artificial Intelligence</p>
+                    <p>Email: ananya.rao@example.edu</p>
+                </article>
+                <article class="card">
+                    <h3>Prof. Kiran Sharma</h3>
+                    <p>Specialization: Data Science</p>
+                    <p>Email: kiran.sharma@example.edu</p>
+                </article>
+                <article class="card">
+                    <h3>Dr. Meera Nair</h3>
+                    <p>Specialization: Cybersecurity</p>
+                    <p>Email: meera.nair@example.edu</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="announcements">
+            <h2>Department Announcements</h2>
+            <div class="card">
+                <h3>Project Exhibition</h3>
+                <p>Students can prepare projects for the department exhibition.</p>
+                <span class="tag">Announcement</span>
+            </div>
+            <div class="card" style="margin-top: 15px;">
+                <h3>Technical Seminar</h3>
+                <p>A seminar on emerging computing technologies is planned.</p>
+                <span class="tag">Upcoming</span>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact the Department</h2>
+            <div class="card">
+                <p><strong>Email:</strong> cs.department@example.edu</p>
+                <p><strong>Office:</strong> Computer Science Department Office</p>
+                <p><strong>Office Hours:</strong> Monday to Friday, 9 AM–4 PM</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Computer Science Department Portal | Academic Information</p>
+    </footer>
+</body>
+</html>
